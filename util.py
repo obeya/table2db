@@ -17,11 +17,7 @@ def replace(resource):
         .replace('(', '')\
         .replace(')', '') \
         .replace('（', '') \
-        .replace('）', '') \
-        .replace('(Top)', '')\
-        .replace('#OC2VBB_Position', 'OC2VBB_Position2')\
-        .replace('测温方案', 'thermometer')\
-        .replace('中英文对照', 'translate')
+        .replace('）', '')
 
 def replace4columns(resource):
     return resource.strip()\
@@ -32,10 +28,7 @@ def replace4columns(resource):
         .replace('(', '')\
         .replace(')', '')\
         .replace('（', '')\
-        .replace('）', '')\
-        .replace('(Top)', '')\
-        .replace('进线功能单元', 'oc_incoming_line')\
-        .replace('测温等级', 'oc_thermometer_level')
+        .replace('）', '')
 
 
 def gen_time():
