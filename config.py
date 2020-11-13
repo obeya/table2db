@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 from os import getenv
@@ -11,5 +10,4 @@ exclude_sheets = ['Sheet1', 'Sheet2']
 
 
 # 数据库导出位置
-# databaseExportLocation = appdata + r'\Autodesk\ApplicationPlugins\DICAD.bundle\Contents'
-databaseExportLocation = '/home/lifeng/workspace'
+databaseExportLocation = '/home/xxxx/workspace'
