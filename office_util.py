@@ -23,7 +23,6 @@ class ExcelRead:
     def get_converter_column(self):
         '''
         读取所有的列,设置转换类型:转换为字符串类型
-        {u'OC_Rate': str}
         '''
         columns_dict = {}
         columns_set = set()
