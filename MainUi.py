@@ -192,7 +192,6 @@ class Ui_MainWindow(QWidget, object):
             pass
         else:
             return
-        # 警告对话框
 
 
 # 转换数据库线程
@@ -391,13 +390,13 @@ class ThreadConvertDB(QThread):
                     lists.append(vals)
                     col_indexs.append(j)
             results = []
-            # 如果单元格值包含分号, 需要进行排雷组合
+
             if len(lists) > 0:
                 results = reduce((lambda x, y: [i + ';' + j for i in x for j in y]), lists)
-            # 如果存在排列组合需生成多条记录
+
             if len(results) > 0:
                 for index, result in enumerate(results):
-                    # 按位置替换原有元素
+
                     if str(result).find(';') >= 0:
                         vals = result.split(';')
                         for jndex, col_index in enumerate(col_indexs):
