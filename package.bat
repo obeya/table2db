@@ -1,0 +1,1 @@
+cmd /k "pyinstaller -F -w RunUi.py --hidden-import MainUi.py  --hidden-import config.py --hidden-import util.py --hidden-import office_util.py --hidden-import db_util.py"
