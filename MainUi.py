@@ -238,7 +238,8 @@ class ThreadConvertDB(QThread):
         finally:
             if self.delFlag:
                 remove(self.excelPath)
-
+    
+    # 统计元素个数（进度条）
     def count_element(self, arr):
         result = {}
         for i in set(arr):
@@ -271,6 +272,7 @@ class ThreadConvertDB(QThread):
         table_info = {}
         table_names = []
 
+        # 遍历表获取表列明并处理
         for i in range(len(sheet_names)):
 
             table_name = util.replace(sheet_names[i])
